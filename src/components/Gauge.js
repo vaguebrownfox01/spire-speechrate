@@ -35,7 +35,7 @@ const Gauge = ({ value }) => {
 			.attr("x", 0)
 			.attr("y", r * -0.2)
 			.attr("text-anchor", "middle")
-			.text("0");
+			.text("0 Hz");
 
 		// Add needle
 		const needle = svg
@@ -67,7 +67,7 @@ const Gauge = ({ value }) => {
 			.duration(700)
 			.ease(d3.easeElastic)
 			.attr("transform", `rotate(${angleScale(newVal)})`);
-		label.text(newVal);
+		label.text(`${newVal} Hz`);
 	}
 
 	return (
