@@ -1,7 +1,9 @@
 # Learn WASM RUST audio
 
-## Pitch Detector
+## Speech Rate Detector:
 
-- src: https://www.toptal.com/webassembly/webassembly-rust-tutorial-web-audio
+RUST + WASM
 
-AudioWorklet
+'''
+$wasm-pack build --target web
+'''
