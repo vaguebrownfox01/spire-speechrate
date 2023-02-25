@@ -62,7 +62,13 @@ impl WasmPitchDetector {
         );
 
         match optional_pitch {
-            Some(pitch) => pitch.frequency,
+            Some(pitch) => {
+                if pitch.frequency < 500.0 {
+                    pitch.frequency
+                } else {
+                    0.0
+                }
+            }
             None => 0.0,
         }
     }

@@ -1,0 +1,20 @@
+.axis .domain,
+.axis .tick line {
+	stroke-width: 4px;
+	stroke: DarkSlateGrey;
+}
+
+.axis .tick text {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.needle {
+	fill: #f00a;
+}
+
+.label {
+	fill: #3d3d3d;
+	font-size: 18px;
+	font-weight: bold;
+}
