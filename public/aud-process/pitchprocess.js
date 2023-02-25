@@ -94,7 +94,7 @@ class PitchProcessor extends AudioWorkletProcessor {
 			this.totalSamples >= this.numAudioSamplesPerAnalysis &&
 			this.detector
 		) {
-			console.log(inputSamples);
+			// console.log(inputSamples);
 			const result = this.detector.detect_pitch(this.samples);
 
 			if (result !== 0) {
